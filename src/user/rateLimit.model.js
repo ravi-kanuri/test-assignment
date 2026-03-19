@@ -3,10 +3,10 @@ import sequlize from "../config/db";
 
 const RateLimit = sequlize.define(
     "RateLimit",{
-        userId:{
-            type: DataTypes.UUID,
-            primaryKey: true,
-        },
+        ip: {
+    type: DataTypes.STRING,
+    primaryKey: true,
+  },
         count :{
             type: DataTypes.INTEGER,
             defaultValue: 1
